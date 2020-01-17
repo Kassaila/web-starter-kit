@@ -217,7 +217,7 @@
       ),
       gulp.series(
         cfg.task.buildJs,
-        // cfg.task.buildJsVendors,
+        cfg.task.buildJsVendors,
       ),
     ),
     cfg.task.imageMin,

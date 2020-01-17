@@ -16,7 +16,7 @@ module.exports = function(options) {
 
     return gulp
       .src(filesExist(jsVendors))
-      .pipe(concat(options.vendorJsMin))
-      .pipe(gulp.dest(`./${options.dest}/js`));
+      .pipe(concat('vendor.js'))
+      .pipe(gulp.dest(`./js/_compiled`));
   };
 };

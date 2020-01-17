@@ -1,7 +1,3 @@
-import '@babel/polyfill';
-import 'slick-carousel';
-import 'object-fit-images';
-
 import accordion from './object/accordion';
 import inlineVideo from './object/video';
 import column from './object/column';
@@ -13,26 +9,24 @@ import programFinder from './object/program-finder';
 import calendar from './object/calendar';
 import catalog from './object/catalog';
 
-window.$ = require('jquery');
-window.jQuery = require('jquery');
-const objectFitImages = require('object-fit-images');
+($ => {
+  $(() => {
+    objectFitImages();
+    accordion.init();
+    inlineVideo.init();
+    instagramLoader.init();
+    twitterLoader.init();
+    calendar.init();
+    catalogProgram.init();
+    carousel.init();
+    programFinder.init();
+    catalog.init();
 
-$(() => {
-  accordion.init();
-  inlineVideo.init();
-  instagramLoader.init();
-  twitterLoader.init();
-  calendar.init();
-  catalogProgram.init();
-  carousel.init();
-  programFinder.init();
-  catalog.init();
-  objectFitImages();
-
-  // Run after instagram and others have loaded
-  $(window).on('load resize', () => {
-    setTimeout(() => {
-      column.init();
-    }, 100);
+    // Run after instagram and others have loaded
+    $(window).on('load resize', () => {
+      setTimeout(() => {
+        column.init();
+      }, 100);
+    });
   });
-});
+})(jQuery);
