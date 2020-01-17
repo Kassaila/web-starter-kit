@@ -7,7 +7,7 @@ const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
 const notify = require('gulp-notify');
 
-module.exports = function (options) {
+module.exports = function(options) {
   const config = {
     prefix: '@@',
     basepath: './keyscreens',
@@ -19,7 +19,8 @@ module.exports = function (options) {
   };
 
   return () => {
-    return gulp.src('./keyscreens/**/*.html')
+    return gulp
+      .src('./keyscreens/**/*.html')
       .pipe(fileInclude(config))
       .on('error', notify.onError(errorConfig))
       .pipe(gulp.dest('./html'));

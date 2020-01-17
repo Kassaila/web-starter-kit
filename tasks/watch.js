@@ -8,7 +8,7 @@ const gulp = require('gulp');
 module.exports = function (options) {
 
   return () => {
-    gulp.watch(`./js/**/*`, gulp.series(options.tasks.lintJs, options.tasks.buildJs));
+    gulp.watch([`./js/**/*`, `!./js/_compiled/**/*`], gulp.series(options.tasks.lintJs, options.tasks.buildJs));
 
     gulp.watch(`./scss/**/*`, gulp.series(options.tasks.buildStyles));
 

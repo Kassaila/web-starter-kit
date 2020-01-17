@@ -1,6 +1,7 @@
 @@include('../_inc/global/head-meta.html', {
 "page_title": "Homepage",
-"page_desc": "Homepage keyscreen"
+"page_desc": "Homepage keyscreen",
+"webRoot": ".."
 })
 
 <body>
@@ -14,8 +15,12 @@
           neque.</p>
       </div>
     </main>
-    @@include('../_inc/interface/footer.html')
-    @@include('../_inc/global/footer-meta.html')
+    @@include('../_inc/interface/footer.html', {
+      "webRoot": ".."
+    })
+    @@include('../_inc/global/footer-meta.html', {
+      "webRoot": ".."
+    })
   </div>
 </body>
 

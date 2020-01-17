@@ -1,6 +1,7 @@
 @@include('../_inc/global/head-meta.html', {
 "page_title": "Program - Detail",
-"page_desc": "Program detail page"
+"page_desc": "Program detail page",
+"webRoot": ".."
 })
 
 <body>
@@ -77,8 +78,12 @@
     </div>
   </main>
 
-  @@include('../_inc/interface/footer.html')
-  @@include('../_inc/global/footer-meta.html')
+  @@include('../_inc/interface/footer.html', {
+    "webRoot": ".."
+  })
+  @@include('../_inc/global/footer-meta.html', {
+    "webRoot": ".."
+  })
 </body>
 
 </html>

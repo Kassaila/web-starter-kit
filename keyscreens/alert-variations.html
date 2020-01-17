@@ -1,6 +1,7 @@
 @@include('../_inc/global/head-meta.html', {
 "page_title": "Alert",
-"page_desc": "Alert display types"
+"page_desc": "Alert display types",
+"webRoot": ".."
 })
 
 <body>
@@ -21,8 +22,12 @@
     </div>
   </main>
 
-  @@include('../_inc/interface/footer.html')
-  @@include('../_inc/global/footer-meta.html')
+  @@include('../_inc/interface/footer.html', {
+    "webRoot": ".."
+  })
+  @@include('../_inc/global/footer-meta.html', {
+    "webRoot": ".."
+  })
 </body>
 
 </html>
