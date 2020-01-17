@@ -1,0 +1,131 @@
+/**
+ * Base theme styles
+ * This file contains theme base styles.
+ *
+ * For example:
+ * - WYSIWYG styles and layouts
+ * - Images and Videos
+ * - Tables
+ */
+
+html {
+  font-size: 18px;
+
+  @media (min-width: $break-large) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @media (min-width: $break-large) {
+    line-height: 1.78;
+  }
+
+  //** Fixed class to prevent scrolling
+  &.js-fixed {
+    overflow: hidden;
+  }
+}
+
+//## Remove margin on last elements
+* >  {
+  p:last-child,
+  ul:last-child,
+  ol:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//## Visually hidden
+.visually-hidden {
+  @include element-invisible;
+}
+
+//## Skip to content
+a.skip-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $color-black;
+
+  &.visually-hidden {
+    @include element-focusable;
+
+    &:focus {
+      background-color: $color-white;
+      padding: 3px 10px;
+      position: absolute !important;
+      z-index: 10000;
+    }
+  }
+}
+
+//## Floated content
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+//## Links
+a {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//## Images
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+  font-size: .75rem;
+}
+
+//## Inline images
+.img-inline {
+  &--full {
+    margin: 2rem 0;
+  }
+
+  &--float {
+    &.float-right {
+      @media (min-width: $break-medium) {
+        margin: 0 0 2rem 2rem;
+      }
+    }
+
+    &.float-left {
+      @media (min-width: $break-medium) {
+        margin: 0 2rem 2rem 0;
+      }
+    }
+  }
+}
+
+//## Tables
+table {
+  clear: both;
+}

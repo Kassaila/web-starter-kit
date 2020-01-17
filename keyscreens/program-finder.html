@@ -1,0 +1,26 @@
+@@include('../_inc/global/head-meta.html', {
+"page_title": "Program Finder",
+"page_desc": "Program finder page"
+})
+
+<body>
+  @@include('../_inc/interface/header.html')
+
+  <main role="main" id="main" class="main">
+    <div class="container">
+      <!-- Page content will go here -->
+      <h1>Program Finder</h1>
+      <div id="program-list">
+        <program-list url="/js/data/programs.json">
+
+        </program-list>
+
+      </div>
+    </div>
+  </main>
+
+  @@include('../_inc/interface/footer.html')
+  @@include('../_inc/global/footer-meta.html')
+</body>
+
+</html>

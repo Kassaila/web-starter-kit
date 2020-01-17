@@ -8,22 +8,16 @@ const gulp = require('gulp');
 module.exports = function (options) {
 
   return () => {
-    gulp.watch(`./${options.src}/js/**/*`, gulp.series(options.tasks.lintJs, options.tasks.buildJs));
+    gulp.watch(`./js/**/*`, gulp.series(options.tasks.lintJs, options.tasks.buildJs));
 
-    gulp.watch(`./${options.src}/scss/**/*`, gulp.series(options.tasks.buildStyles, options.tasks.buildStylesCustom));
+    gulp.watch(`./scss/**/*`, gulp.series(options.tasks.buildStyles));
 
-    gulp.watch(`./${options.src}/html/**/*`, gulp.series(options.tasks.buildHtml, options.tasks.lintHtml));
+    gulp.watch(`./keyscreens/**/*`, gulp.series(options.tasks.buildHtml, options.tasks.lintHtml));
 
-    gulp.watch(`./${options.src}/images/**/*.+(${options.imageExtensions})`)
-      .on('unlink', (path) => {
-        options.deleteFile({
-          path,
-          event: 'unlink'
-        }, options.src, options.dest);
-      })
+    gulp.watch('./assets/**/*.{gif,png,jpg,jpeg,svg}')
       .on('add', gulp.series(options.tasks.imageMin));
 
-    gulp.watch([`./${options.dest}/**/*`, `!./${options.dest}/**/*.map`])
+    gulp.watch([`./html/**/*`, `./css/**/*`, `./js/_compiled/**/*`, `!./css/maps/*.map`])
       .on('change', options.browserSync.reload);
   };
 };

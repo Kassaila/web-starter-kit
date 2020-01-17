@@ -7,9 +7,10 @@ const del = require('del');
 
 module.exports = function (options) {
   const dir = [
-    `${options.src}/**/*`,
-    `!${options.src}/images/`,
-    `!${options.src}/images/**`,
+    `./html`,
+    `./css/main.css`,
+    `./css/maps`,
+    `./js/_compiled`,
   ];
   const config = {
     force: true,

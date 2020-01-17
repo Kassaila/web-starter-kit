@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Section
+ *
+ * Base styles for all section content.
+ */
+
+.section {
+  margin: 2rem 0;
+
+  @media (min-width: $break-large) {
+    margin: 3rem 0;
+  }
+
+  &__header {
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__intro {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+
+    @media (min-width: $break-large) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__cta {
+    @include cta;
+    text-align: center;
+  }
+}

@@ -1,0 +1,152 @@
+/**
+ * @file
+ * Blog
+ *
+ * Contains styles for blog detail and view modes.
+ */
+.blog {
+  &__image {
+    margin: 2rem 0 1rem;
+  }
+
+  &__publish-info {
+    display: flex;
+    margin: 0 0 1rem;
+  }
+
+  &__date {
+    font-weight: 700;
+  }
+
+  &__author {
+    &:before {
+      content: '|';
+      font-size: inherit;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__tags {
+    margin: 1rem 0;
+  }
+
+  &__tag-label {
+    font-weight: 700;
+    margin: 0 0 1rem;
+  }
+
+  &__tag-list {
+    a {
+      margin: 0 .25rem 0 0;
+      padding: 0.125rem 0.5rem;
+      border: 1px solid $color-black;
+      border-radius: 3px;
+    }
+  }
+
+}
+
+// Blog Listing
+.blog-list {
+  @media (min-width: $break-large) {
+    display: flex;
+  }
+
+  &__items {
+    list-style: none;
+    display: block;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 2rem 0;
+    display: table;
+  }
+
+  &__title {
+    margin-top: 0.5rem;
+
+    @media (min-width: $break-medium) {
+      margin-top: -0.3rem;
+    }
+  }
+
+  &__image {
+    @media (min-width: $break-medium) {
+      float: left;
+      margin: 0 30px 0 0
+    }
+  }
+
+  &__text {
+    overflow: hidden;
+  }
+
+  &__date,
+  &__author {
+    display: inline-block;
+  }
+
+  &__date {
+    font-weight: 700;
+
+    &:after {
+      content: '|';
+      display: inline-block;
+      vertical-align: middle;
+      margin: -0.3rem 2px 0 6px;
+    }
+  }
+
+  &__pager {
+    clear: both;
+  }
+}
+
+// Blog 3 Up Feature
+.blog3up {
+  &__header {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      flex: 1;
+    }
+  }
+
+  &__date,
+  &__author {
+    display: inline-block;
+  }
+
+  &__date {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    a {
+      font-style: italic;
+    }
+
+    &:before {
+      font-size: inherit;
+      margin: 0 0.25em;
+      content: '|';
+    }
+  }
+
+  &__section-cta {
+    margin-top: 0;
+  }
+}
+
+.blog__filters {
+  @media (min-width: $break-medium) {
+    display: flex;
+  }
+
+  @media (min-width: $break-large) {
+    display: block;
+  }
+}

@@ -4,25 +4,29 @@
 'use strict';
 
 const gulp = require('gulp');
-const notify = require('gulp-notify');
 const htmlhint = require('gulp-htmlhint');
+const notify = require('gulp-notify');
 
-module.exports = function (options) {
+module.exports = function(options) {
   const errorConfig = {
     title: 'HTML linting error',
-    icon: './sys_icon/error_icon.png',
     wait: true,
   };
 
-  return (done) => {
-    gulp.src(`${options.dest}/*.html`)
-      .pipe(htmlhint({
-        'attr-lowercase': ['viewBox'],
-      }))
+  return done => {
+    gulp
+      .src('./html/**/*.html')
+      .pipe(
+        htmlhint({
+          'attr-lowercase': ['viewBox'],
+        }),
+      )
       .pipe(htmlhint.reporter('htmlhint-stylish'))
-      .pipe(htmlhint.failOnError({
-        suppress: true,
-      }))
+      .pipe(
+        htmlhint.failOnError({
+          suppress: true,
+        }),
+      )
       .on('error', notify.onError(errorConfig));
 
     return done();

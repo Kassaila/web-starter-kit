@@ -7,7 +7,7 @@ const fs = require('fs');
 
 module.exports = function (options) {
   // If index.html exist - open it, else show folder
-  const listDirectory = !fs.existsSync(`${options.dest}/${options.mainHtml}`);
+  const listDirectory = !fs.existsSync(`./${options.mainHtml}`);
 
   return () => {
     options.browserSync.init({
@@ -15,7 +15,7 @@ module.exports = function (options) {
       injectChanges: true,
       minify: false,
       server: {
-        baseDir: options.dest,
+        baseDir: './',
         directory: listDirectory,
       },
       snippetOptions: {

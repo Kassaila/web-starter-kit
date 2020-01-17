@@ -1,0 +1,52 @@
+/**
+ * @file
+ * Generic Block: Image list
+ *
+ * Styles for Generic Block: Image list object.
+ */
+
+.genimglist {
+  &__item {
+    margin: 0 0 1.5rem;
+
+    @media (min-width: $break-medium) {
+      display: flex;
+    }
+  }
+
+  &__img {
+    margin: 0 0 1rem;
+
+    @media (min-width: $break-medium) {
+      flex: 0;
+      flex-basis: 40%;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @media (min-width: $break-medium) {
+      flex: 0;
+      flex-basis: 60%;
+      padding-left: 1.5rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0 0.75rem;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

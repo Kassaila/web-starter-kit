@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Program List
+ *
+ * Styles for Program List display object.
+ */
+
+.program-list {
+  &__item {
+    padding: .5rem;
+    border-bottom: 1px solid $color-black;
+
+    @media (min-width: $break-medium) {
+      display: flex;
+    }
+  }
+
+  &__program {
+    flex-basis: 60%;
+  }
+}

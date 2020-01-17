@@ -1,0 +1,691 @@
+[
+  {
+    "title": "nulla ipsum irure ad amet",
+    "url": "#",
+    "department": [
+      "Biological Sciences",
+      "Business"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Minors"
+    ],
+    "credentialType": [
+      "MS",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Online"
+    ]
+  },
+  {
+    "title": "consectetur laborum ex cillum dolor",
+    "url": "#",
+    "department": [
+      "Biological Sciences",
+      "Business"
+    ],
+    "programType": [
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "AA"
+    ],
+    "programDivision": [
+      "College of Engineering"
+    ],
+    "location": [
+      "Hybrid",
+      "Online"
+    ]
+  },
+  {
+    "title": "laboris aliqua elit irure irure",
+    "url": "#",
+    "department": [
+      "Biological Sciences",
+      "Education"
+    ],
+    "programType": [
+      "Minors",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "BA",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Online",
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "sit pariatur voluptate aute minim",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Business"
+    ],
+    "programType": [
+      "Minors",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "BA"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Online"
+    ]
+  },
+  {
+    "title": "labore elit deserunt Lorem consequat",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Business"
+    ],
+    "programType": [
+      "Bachelor Degrees",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "MS"
+    ],
+    "programDivision": [
+      "College of Engineering"
+    ],
+    "location": [
+      "Online",
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "laboris mollit cillum commodo ea",
+    "url": "#",
+    "department": [
+      "Chemistry & Physics"
+    ],
+    "programType": [
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "MS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Engineering"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Lorem Campus"
+    ]
+  },
+  {
+    "title": "irure nulla ex esse enim",
+    "url": "#",
+    "url": "#",
+    "department": [
+      "Chemistry & Physics",
+      "Education"
+    ],
+    "programType": [
+      "Credit Certificates",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "AA"
+    ],
+    "programDivision": [
+      "College of Business",
+      "College of Education"
+    ],
+    "location": [
+      "Online"
+    ]
+  },
+  {
+    "title": "minim Lorem amet nostrud deserunt",
+    "url": "#",
+    "department": [
+      "Education",
+      "Arts"
+    ],
+    "programType": [
+      "Minors",
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "BA",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Engineering"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Online"
+    ]
+  },
+  {
+    "title": "qui cillum dolore ad eu",
+    "url": "#",
+    "department": [
+      "Education",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Minors"
+    ],
+    "credentialType": [
+      "AA",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Business",
+      "College of Engineering"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Online"
+    ]
+  },
+  {
+    "title": "ad cupidatat in aliqua ad",
+    "url": "#",
+    "department": [
+      "Chemistry & Physics",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "BA",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Arts & Sciences",
+      "College of Business"
+    ],
+    "location": [
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "ipsum aute ullamco reprehenderit sint",
+    "url": "#",
+    "department": [
+      "Business",
+      "Arts"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "AA"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Business"
+    ],
+    "location": [
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "commodo commodo minim dolor anim",
+    "url": "#",
+    "department": [
+      "Business",
+      "Education"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Business"
+    ],
+    "location": [
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "commodo nostrud aliqua aliquip amet",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "BA",
+      "AA"
+    ],
+    "programDivision": [
+      "College of Engineering"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "eiusmod cupidatat excepteur dolor veniam",
+    "url": "#",
+    "department": [
+      "Arts"
+    ],
+    "programType": [
+      "Minors",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Lorem Campus"
+    ]
+  },
+  {
+    "title": "ex pariatur excepteur ut do",
+    "url": "#",
+    "department": [
+      "Education",
+      "Chemistry & Physics"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "MS",
+      "AA"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Engineering"
+    ],
+    "location": [
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "laboris duis sit proident id",
+    "url": "#",
+    "department": [
+      "Chemistry & Physics",
+      "Business"
+    ],
+    "programType": [
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "AA",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Business"
+    ],
+    "location": [
+      "Hybrid",
+      "Online"
+    ]
+  },
+  {
+    "title": "laborum minim proident veniam enim",
+    "url": "#",
+    "department": [
+      "Education",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Bachelor Degrees",
+      "Minors"
+    ],
+    "credentialType": [
+      "BS",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "Lorem sint cillum mollit dolore",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Education"
+    ],
+    "programType": [
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Hybrid",
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "anim reprehenderit aute nulla non",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Education"
+    ],
+    "programType": [
+      "Minors",
+      "Minors"
+    ],
+    "credentialType": [
+      "BA",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Business",
+      "College of Education"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Online"
+    ]
+  },
+  {
+    "title": "sit minim incididunt quis nisi",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Education"
+    ],
+    "programType": [
+      "Bachelor Degrees",
+      "Minors"
+    ],
+    "credentialType": [
+      "BA",
+      "AA"
+    ],
+    "programDivision": [
+      "College of Business",
+      "College of Education"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "deserunt in in Lorem ullamco",
+    "url": "#",
+    "department": [
+      "Business",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "MS",
+      "BA"
+    ],
+    "programDivision": [
+      "College of Business"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Lorem Campus"
+    ]
+  },
+  {
+    "title": "ad dolore dolor ex velit",
+    "url": "#",
+    "department": [
+      "Business",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Minors",
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "BA",
+      "BA"
+    ],
+    "programDivision": [
+      "College of Business"
+    ],
+    "location": [
+      "Online",
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "tempor minim deserunt nulla est",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Business"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "BS",
+      "BS"
+    ],
+    "programDivision": [
+      "College of Education"
+    ],
+    "location": [
+      "Hybrid",
+      "Lorem Campus"
+    ]
+  },
+  {
+    "title": "cupidatat et sit ea culpa",
+    "url": "#",
+    "department": [
+      "Business",
+      "Education"
+    ],
+    "programType": [
+      "Credit Certificates",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "AA"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Ipsum Campus",
+      "Hybrid"
+    ]
+  },
+  {
+    "title": "deserunt et non cillum amet",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Education"
+    ],
+    "programType": [
+      "Minors",
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "AA",
+      "BA"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "ullamco sunt id magna aute",
+    "url": "#",
+    "department": [
+      "Education",
+      "Biological Sciences"
+    ],
+    "programType": [
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "MS",
+      "BA"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Arts & Sciences"
+    ],
+    "location": [
+      "Online",
+      "Lorem Campus"
+    ]
+  },
+  {
+    "title": "dolore enim enim ad aute",
+    "url": "#",
+    "department": [
+      "Biological Sciences",
+      "Business"
+    ],
+    "programType": [
+      "Minors",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "BA",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Education",
+      "College of Business"
+    ],
+    "location": [
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "qui sit ipsum voluptate cillum",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Business"
+    ],
+    "programType": [
+      "Associate Degrees",
+      "Credit Certificates"
+    ],
+    "credentialType": [
+      "AA",
+      "AA"
+    ],
+    "programDivision": [
+      "College of Engineering"
+    ],
+    "location": [
+      "Hybrid",
+      "Online"
+    ]
+  },
+  {
+    "title": "nostrud commodo sunt non duis",
+    "url": "#",
+    "department": [
+      "Arts",
+      "Business"
+    ],
+    "programType": [
+      "Credit Certificates",
+      "Bachelor Degrees"
+    ],
+    "credentialType": [
+      "BS",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Business",
+      "College of Engineering"
+    ],
+    "location": [
+      "Lorem Campus",
+      "Ipsum Campus"
+    ]
+  },
+  {
+    "title": "sunt sunt duis eu nulla",
+    "url": "#",
+    "department": [
+      "Business",
+      "Chemistry & Physics"
+    ],
+    "programType": [
+      "Credit Certificates",
+      "Associate Degrees"
+    ],
+    "credentialType": [
+      "BS",
+      "MS"
+    ],
+    "programDivision": [
+      "College of Engineering",
+      "College of Education"
+    ],
+    "location": [
+      "Lorem Campus"
+    ]
+  }
+]

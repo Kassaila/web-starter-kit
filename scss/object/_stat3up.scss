@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Statistic: 3 up feature
+ *
+ * Styles for Statistick: 3 up feature object.
+ */
+
+.stat3up {
+  &__item {
+    text-align: center;
+  }
+
+  &__number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__caption {
+    margin: 0 0 1rem;
+  }
+}

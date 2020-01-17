@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Instagram
+ *
+ * Contains styles for instagram object.
+ */
+
+.instagram {
+  &__tile {
+    position: relative;
+    padding-top: 100%;
+
+    @media (min-width: $break-large) {
+      padding-top: calc((100% / 3) - (50px / 3));
+    }
+  }
+
+  &__link {
+    @include ir;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+}

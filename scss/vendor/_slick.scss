@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Slick
+ *
+ * Slick carousel styles.
+ */
+.slick {
+  position: relative;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-dots {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  button {
+    position: relative;
+    @include ir;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      height: 0.5rem;
+      width: 0.5rem;
+      background: $color-black;
+      border: 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+
+      @at-root li:not(.slick-active) button:after {
+        background: rgba($color-black, 0.5);
+      }
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include ir;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  z-index: 5;
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    height: 0.75rem;
+    width: 0.75rem;
+    background: $color-black;
+    border: 0;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &.slick-disabled:after {
+    background: rgba($color-black, 0.5);
+  }
+}
+
+.slick-next {
+  right: 0;
+}

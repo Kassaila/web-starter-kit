@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Page
+ *
+ * Contains styles for page wrapper layout.
+ */
+
+.container {
+  @include gutter;
+}
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+}

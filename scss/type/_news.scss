@@ -1,0 +1,31 @@
+/**
+ * @file
+ * News
+ *
+ * Contains styles for news and news view modes.
+ */
+
+ .news {
+  &__image {
+    margin: 2rem 0 1rem;
+  }
+
+  &__date {
+    font-weight: 700;
+  }
+
+  // Listing
+  &--listing {
+    .news {
+      &__item {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      &__image {
+        margin: 0 2em 2em 0;
+        flex: 1 0 30%;
+      }
+    }
+  }
+ }

@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Story Display
+ *
+ * Contains styles for Story Display object.
+ */
+
+.story-display {
+  &__wrap {
+    @media (min-width: $break-medium) {
+      display: flex;
+    }
+  }
+
+  &__img {
+    margin: 0 0 1rem;
+
+    @media (min-width: $break-medium) {
+      flex: 0 0 40%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @media (min-width: $break-medium) {
+      flex: 0 0 60%;
+      padding-left: 1.5rem;
+    }
+  }
+
+  &__quote {
+    margin: 0 0 1rem;
+  }
+
+  &__title {
+    margin: 0 0 0.125rem;
+    font-size: 1.125rem;
+  }
+
+  &__subtitle {
+    margin: 0 0 1rem;
+    font-size: 0.875rem;
+  }
+}

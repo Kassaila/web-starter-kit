@@ -1,0 +1,34 @@
+/**
+ * Variables
+ * Contains global variables available to the theme.
+ */
+
+//
+// Fonts
+$base-font: metropolis, Arial, Helvetica, sans-serif;
+//
+
+/// Arial
+$font-arial: Arial, Helvetica, sans-serif;
+
+//
+// Breakpoints
+//
+$break-x-large: 1201px;
+$break-large: 1025px;
+$break-medium: 700px;
+
+// Content
+$content-max: 1600px;
+
+//
+// Colors
+//
+$color-green: #1b5633;
+$color-orange: #ea6716;
+$color-tan: #f0e9e9;
+$color-white: #fff;
+$color-black: #000;
+$color-alert-major: #ff6068;
+$color-alert-medium: #fbff60;
+$color-alert-minor: #60ffbd;

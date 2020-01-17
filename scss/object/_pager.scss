@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Pager
+ *
+ * Contains styles for the pager on listing pages.
+ */
+.pager__list {
+  display: flex;
+  list-style: none;
+
+  .pager__item {
+    margin: 0 5px;
+  }
+
+  .icon-arrow-left,
+  .icon-arrow-right {
+    display: block;
+    position: relative;
+    width: 40px;
+    top: 50%;
+
+     &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      height: 0.75rem;
+      width: 0.75rem;
+      background: #000000;
+      border: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}

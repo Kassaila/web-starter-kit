@@ -12,7 +12,7 @@ module.exports = function (options) {
   });
 
   return done => {
-    const report = cli.executeOnFiles([`./${options.src}/js/**/*.js`]);
+    const report = cli.executeOnFiles([`./js/**/*.js`]);
     const formatter = cli.getFormatter();
 
     if (formatter(report.results) !== '') console.log(formatter(report.results));

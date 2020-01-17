@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Award
+ *
+ * Contains styles for Awards in WYSIWYG region.
+ */
+
+ .award {
+  clear: both;
+
+  &__item {
+    margin: 0 0 1em;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin: 0;
+  }
+ }

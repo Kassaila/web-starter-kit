@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Form
+ *
+ * Contains styles for forms in main content region.
+ */
+.main .form {
+  margin: 2rem 0;
+
+  &__item:not(.form--fieldset) {
+    label {
+      display: block;
+      font-weight: 700;
+    }
+  }
+}

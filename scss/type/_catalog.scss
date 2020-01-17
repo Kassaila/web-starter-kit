@@ -1,0 +1,96 @@
+/**
+ * @file
+ * Catalog
+ *
+ * Contains styles for catalog program detail and view modes.
+ */
+.catalog {
+  &__faculty {
+    &-info {
+      @media (min-width: $break-medium) {
+        display: flex;
+      }
+
+      img {
+        margin: 0 0 1rem 0;
+        @media (min-width: $break-medium) {
+          margin: 0 1rem 2rem 0;
+        }
+      }
+    }
+  }
+
+  .faculty-info {
+    &__title {
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+    }
+
+    &__email {
+      margin: 0 0 0.5rem 0;
+    }
+
+    &__office {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+// Course Catalog List
+.catalog-course-list,
+.catalog-program-list {
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      border-bottom: 1px solid;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 20px 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  &__credit {
+    font-weight: 700;
+  }
+
+  &__select {
+    margin-right: 20px;
+  }
+
+  .dataTables_info {
+    display: none;
+  }
+
+  .dataTables_filter {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    input[type='search'] {
+      display: block;
+    }
+  }
+
+  .dataTables_info {
+    display: none;
+  }
+}

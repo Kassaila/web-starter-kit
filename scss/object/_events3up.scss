@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Events 3 Up Feature
+ *
+ * Contains styles for Events 3 Up content object.
+ */
+
+.events3up {
+  &__item {
+    text-align: center;
+  }
+
+  &__date {
+    width: 61px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid $color-black;
+
+    @media (min-width: $break-medium) {
+      width: 82px;
+      height: 82px;
+    }
+
+    @media (min-width: $break-large) {
+      width: 121px;
+      height: 121px;
+    }
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+  }
+}

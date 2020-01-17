@@ -1,0 +1,51 @@
+/**
+ * @file
+ * CSS output file
+ *
+ * Combine all theme scss into a single CSS file
+ */
+
+ @import 'abstracts/variables';
+ @import 'abstracts/mixins';
+ @import 'abstracts/animation';
+
+ @import 'base/normalize';
+ @import 'base/typography';
+ @import 'base/base';
+ @import 'base/print';
+ @import 'base/fonts';
+
+ @import 'layout/page';
+ @import 'layout/columns';
+ @import 'layout/section';
+
+ @import 'interface/page-intro';
+ @import 'interface/alert';
+
+ @import 'object/accordion';
+ @import 'object/award';
+ @import 'object/form';
+ @import 'object/gen2col';
+ @import 'object/gen3col';
+ @import 'object/genimglist';
+ @import 'object/hero';
+ @import 'object/instagram';
+ @import 'object/program-list';
+ @import 'object/stat3up';
+ @import 'object/events3up';
+ @import 'object/story-display';
+ @import 'object/twitter';
+ @import 'object/video';
+ @import 'object/pager';
+ @import 'object/carousel';
+
+ @import 'type/blog';
+ @import 'type/catalog';
+ @import 'type/faculty';
+ @import 'type/news';
+ @import 'type/program';
+ @import 'type/calendar';
+ @import 'type/event';
+ @import 'type/calendar-list';
+
+ @import 'vendor/slick';

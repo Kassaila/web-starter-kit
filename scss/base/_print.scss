@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Print specific styliing
+ */
+
+@media print {
+  .header,
+  .footer {
+    display: none;
+  }
+}

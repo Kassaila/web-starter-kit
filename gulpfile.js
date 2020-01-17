@@ -142,17 +142,6 @@
     dest: cfg.folder.build,
     mainScss: cfg.file.mainScss,
     mainScssMin: cfg.file.mainScssMin,
-    sortType: cfg.buildStyles.sortType,
-    checkProduction: true,
-  });
-
-  /**
-   * Build styles custom files listed in the config
-   */
-  requireTask(`${cfg.task.buildStylesCustom}`, `./${cfg.folder.tasks}/`, {
-    stylesCustomInfo: cfg.getPathesForStylesCustom(),
-    dest: cfg.folder.build,
-    sortType: cfg.buildStyles.sortType,
     checkProduction: true,
   });
 
@@ -173,6 +162,7 @@
   requireTask(`${cfg.task.imageMin}`, `./${cfg.folder.tasks}/`, {
     src: cfg.folder.src,
     dest: cfg.folder.build,
+    imageExtensions: cfg.imageExtensions,
   });
 
   /**
@@ -180,30 +170,6 @@
    */
   requireTask(`${cfg.task.cleanBuild}`, `./${cfg.folder.tasks}/`, {
     src: cfg.folder.build,
-  });
-
-  /**
-   * Clean production folder
-   */
-  requireTask(`${cfg.task.cleanProd}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.prod,
-  });
-
-
-  /**
-   * Copy folders to the build folder
-   */
-  requireTask(`${cfg.task.copyFolders}`, `./${cfg.folder.tasks}/`, {
-    dest: cfg.folder.build,
-    foldersToCopy: cfg.getPathesToCopy(),
-  });
-
-  /**
-   * Copy folders to the production folder
-   */
-  requireTask(`${cfg.task.copyFoldersProd}`, `./${cfg.folder.tasks}/`, {
-    dest: cfg.folder.prod,
-    foldersToCopy: cfg.getPathesToCopyForProduction(),
   });
 
   /**
@@ -228,7 +194,6 @@
       lintJs: cfg.task.lintJs,
       buildJs: cfg.task.buildJs,
       buildStyles: cfg.task.buildStyles,
-      buildStylesCustom: cfg.task.buildStylesCustom,
       buildHtml: cfg.task.buildHtml,
       lintHtml: cfg.task.lintHtml,
       imageMin: cfg.task.imageMin,
@@ -248,50 +213,19 @@
       ),
       gulp.series(
         cfg.task.buildStyles,
-        cfg.task.buildStylesCustom,
-        cfg.task.buildStylesVendors,
+        // cfg.task.buildStylesVendors,
       ),
       gulp.series(
         cfg.task.buildJs,
-        cfg.task.buildJsVendors,
+        // cfg.task.buildJsVendors,
       ),
     ),
     cfg.task.imageMin,
-    cfg.task.copyFolders,
     gulp.parallel(
       cfg.task.browserSync,
       cfg.task.watch,
     ),
   ));
-
-  /**
-   * Creating production folder without unnecessary files
-   */
-  gulp.task('build', gulp.series(
-    gulp.parallel(
-      cfg.task.cleanProd,
-      cfg.task.cleanBuild
-    ),
-    cfg.task.lintJs,
-    gulp.parallel(
-      gulp.series(
-        cfg.task.buildHtml,
-        cfg.task.lintHtml,
-      ),
-      gulp.series(
-        cfg.task.buildStyles,
-        cfg.task.buildStylesCustom,
-        cfg.task.buildStylesVendors,
-      ),
-      gulp.series(
-        cfg.task.buildJs,
-        cfg.task.buildJsVendors,
-      ),
-    ),
-    cfg.task.imageMin,
-    cfg.task.copyFolders,
-    cfg.task.copyFoldersProd,
-  ), true);
 
   /**
   * Fix JS files

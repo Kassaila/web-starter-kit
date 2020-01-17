@@ -1,0 +1,64 @@
+/**
+ * @file
+ * Calendar
+ *
+ * Contains styles for the Calendar Detail Page
+ */
+.event-detail {
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  &__data {
+    width: 100%;
+  }
+
+  &__tags-label,
+  &__save-label {
+    font-weight: 700;
+  }
+
+  &__date {
+    text-align: center;
+    width: 61px;
+    height: 61px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: $break-medium) {
+      width: 86px;
+      height: 86px;
+    }
+
+    @media (min-width: $break-large) {
+      width: 129px;
+      height: 129px;
+    }
+  }
+
+  &__body {
+    @include clearfix();
+
+    figure.align-right {
+      margin: 2rem -15px;
+
+      @media (min-width: $break-medium) {
+        float: right;
+        margin: 0 0 2rem 2rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__month {
+    text-transform: uppercase;
+  }
+}

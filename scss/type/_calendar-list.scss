@@ -1,0 +1,186 @@
+/**
+ * @file
+ * Calendar List
+ *
+ * Contains styles for the Calendar List
+ */
+
+.calendar {
+  h1 {
+    @media (min-width: $break-medium) {
+      float: left;
+    }
+
+    @media (min-width: $break-large) {
+      float: none;
+    }
+  }
+
+  &__expand-filters {
+    @media (min-width: $break-medium) {
+      float: right;
+      clear: right;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: $break-large) {
+      display: none;
+    }
+  }
+
+  &__left-col {
+    clear: left;
+  }
+
+  &__pagination__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li:after {
+      content: '|';
+      display: inline-block;
+      vertical-align: middle;
+      margin: -0.3rem 10px 0;
+    }
+
+    li:last-child:after {
+      content: none;
+    }
+  }
+
+  &__pagination {
+    margin-bottom: 2rem;
+
+    &__date {
+      display: flex;
+      margin-left: -13.5px;
+    }
+  }
+
+  &__event__date {
+    text-align: center;
+    width: 61px;
+    height: 61px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid $color-black;
+    margin-right: 15px;
+
+    @media (min-width: $break-medium) {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  &__event__text {
+    overflow: hidden;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+  }
+
+  // datepicker and categories ui
+  &__category-dates {
+    display: none;
+    @media (min-width: $break-medium) {
+      float: right;
+      clear: right;
+    }
+
+    @media (min-width: $break-large) {
+      display: block !important;
+    }
+  }
+
+  &__event {
+    margin-bottom: 2rem;
+  }
+
+  .mini-cal {
+    &__header {
+      display: flex;
+    }
+
+    &__dates {
+      td {
+        padding: 0 0.25em;
+      }
+    }
+
+    .current {
+      background: $color-black;
+
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
+  .icon-arrow-left,
+  .icon-arrow-right {
+    position: relative;
+    width: 40px;
+
+     &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      height: 0.75rem;
+      width: 0.75rem;
+      background: #000000;
+      border: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .control-wrap {
+    label {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+
+      input[type="checkbox"] {
+        display: inline;
+      }
+
+      input[type="checkbox"]:checked + .control-text:after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 12px;
+        background: $color-black;
+        width: 8px;
+        height: 8px;
+        display: block;
+
+      }
+
+      .control-text {
+        &:before {
+          content: "";
+          border: 1px solid $color-black;
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          left: 0;
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  .category__drop {
+    fieldset {
+      border: 0;
+      padding: 0;
+    }
+  }
+}

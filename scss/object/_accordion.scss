@@ -1,0 +1,196 @@
+/**
+ * @file
+ * Accordion
+ *
+ * Contains styles for accordion content object.
+ */
+
+.accordion {
+  // Expand/collapse all wrapper
+  &__all {
+    padding: 0 1em 0 0;
+    margin: 1.5em 0;
+    text-align: left;
+
+    @media (min-width: $break-medium) {
+      text-align: right;
+    }
+
+    button {
+      position: relative;
+      padding: 0 0 0 30px;
+      background-color: transparent;
+      border: 0;
+      color: $color-black;
+      font-size: 1em;
+      font-weight: 700;
+      transition: 0.3s ease-in-out;
+
+      &.js-disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+    }
+  }
+
+  // Expand all toggle
+  &__expand-all {
+    margin-right: 1.8em;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-black;
+      content: '';
+      transition: 0.3s ease-in-out;
+    }
+
+    &:before {
+      left: 6px;
+      height: 15px;
+      width: 3px;
+    }
+
+    &:after {
+      left: 0;
+      height: 3px;
+      width: 15px;
+    }
+  }
+
+  // Collapse all toggle
+  &__collapse-all {
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-black;
+      content: '';
+      transition: 0.3s ease-in-out;
+    }
+
+    &:after {
+      left: 0;
+      height: 3px;
+      width: 15px;
+    }
+  }
+
+  // Accordion item
+  &__item {
+    margin: 0 0 0.25em;
+    border: 1px solid $color-black;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  // Item toggle
+  &__toggle {
+    display: block;
+    position: relative;
+    padding: 1em 4em 1em 1em;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    color: $color-black;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+
+    &:focus {
+      outline-width: 2px;
+    }
+
+    // Expanded toggle styling
+    &.js-expanded {
+      .accordion__icon:before {
+        height: 0;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+
+    // Psuedo elements to make up +/-
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $color-black;
+      content: '';
+      transition: 0.3s ease-in-out;
+    }
+
+    &:before {
+      left: calc(0.5em - 1.5px);
+      height: 100%;
+      width: 3px;
+    }
+
+    &:after {
+      height: 3px;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 1.5em 1em 3em;
+
+    .views-element-container {
+      width: 100%;
+    }
+  }
+
+  &__copy {
+    width: 100%;
+
+    .table--wysiwyg {
+      margin: 0;
+      width: 100%;
+
+      @media (max-width: $break-medium - 1px) {
+        margin: 0 1em;
+        width: calc(100% + 2em);
+      }
+    }
+  }
+
+  &__top {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 1.5em;
+    background: transparent;
+    border: 0;
+    font-weight: 700;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 7px;
+      width: 7px;
+      content: '';
+      border-color: $color-black;
+      border-style: solid;
+      border-width: 3px 0 0 3px;
+      transform: rotate(45deg) translateY(-50%);
+    }
+  }
+}

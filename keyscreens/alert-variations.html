@@ -1,0 +1,28 @@
+@@include('../_inc/global/head-meta.html', {
+"page_title": "Alert",
+"page_desc": "Alert display types"
+})
+
+<body>
+  @@include('../_inc/interface/header.html')
+
+  <main role="main" id="main" class="main">
+    <div class="container alert-display">
+      <!-- Page content will go here -->
+      <div class="alert alert--minor">
+        @@include('../_inc/interface/alert.html')
+      </div>
+      <div class="alert alert--medium">
+        @@include('../_inc/interface/alert.html')
+      </div>
+      <div class="alert alert--major">
+        @@include('../_inc/interface/alert.html')
+      </div>
+    </div>
+  </main>
+
+  @@include('../_inc/interface/footer.html')
+  @@include('../_inc/global/footer-meta.html')
+</body>
+
+</html>
