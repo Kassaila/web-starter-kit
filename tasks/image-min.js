@@ -9,8 +9,7 @@ const imagemin = require('gulp-imagemin');
 
 module.exports = function(options) {
   return () => {
-    return gulp
-      .src(`./${options.src}/images/**/*`)
+    return gulp.src(`./${options.src}/images/**/*`)
       .pipe(newer(`./${options.dest}/images/`))
       .pipe(
         imagemin([
