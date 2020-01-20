@@ -7,20 +7,23 @@
 
 .genimglist {
   &__item {
+    display: flex;
     margin: 0 0 1.5rem;
 
-    @media (min-width: $break-medium) {
-      display: flex;
+    @media (max-width: $break-medium) {
+      display: block;
     }
   }
 
   &__img {
-    margin: 0 0 1rem;
-
-    @media (min-width: $break-medium) {
       flex: 0;
       flex-basis: 40%;
       margin: 0;
+
+    @media (max-width: $break-medium) {
+      flex: none;
+      flex-basis: auto;
+      margin: 0 0 1rem;
     }
 
     img {
@@ -29,10 +32,13 @@
   }
 
   &__content {
-    @media (min-width: $break-medium) {
       flex: 0;
       flex-basis: 60%;
       padding-left: 1.5rem;
+    @media (max-width: $break-medium) {
+      flex: none;
+      flex-basis: auto;
+      padding-left: 0;
     }
   }
 

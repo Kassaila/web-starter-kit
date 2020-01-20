@@ -14,20 +14,21 @@
   }
 
   &__caption {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    font-size: 1.125rem;
-    margin: 2rem auto 0;
-    padding: 1rem;
+    position: absolute;
+    width: calc(100% - 4rem);
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 1.3755rem;
+    background: rgba($color-white, 0.7);
 
-    @media (min-width: $break-medium) {
-      position: absolute;
-      width: calc(100% - 4rem);
-      margin: 2rem;
-      padding: 2rem;
-      font-size: 1.3755rem;
-      background: rgba($color-white, 0.7);
+    @media (max-width: $break-medium) {
+      position: relative;
+      width: 100%;
+      bottom: 0;
+      font-size: 1.125rem;
+      margin: 2rem auto 0;
+      padding: 1rem;
+      background: $color-white;
     }
   }
 

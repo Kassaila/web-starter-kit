@@ -7,24 +7,28 @@
 
 .calendar {
   h1 {
-    @media (min-width: $break-medium) {
+    @media (max-width: $break-large) {
       float: left;
     }
 
-    @media (min-width: $break-large) {
+    @media (max-width: $break-medium) {
       float: none;
     }
   }
 
   &__expand-filters {
-    @media (min-width: $break-medium) {
+    display: none;
+
+    @media (max-width: $break-large) {
       float: right;
       clear: right;
       margin-top: 2rem;
     }
 
-    @media (min-width: $break-large) {
-      display: none;
+    @media (max-width: $break-medium) {
+      float: none;
+      clear: none;
+      margin-top: 0;
     }
   }
 
@@ -60,8 +64,8 @@
 
   &__event__date {
     text-align: center;
-    width: 61px;
-    height: 61px;
+    width: 86px;
+    height: 86px;
     float: left;
     display: flex;
     flex-direction: column;
@@ -69,9 +73,9 @@
     border: 1px solid $color-black;
     margin-right: 15px;
 
-    @media (min-width: $break-medium) {
-      width: 86px;
-      height: 86px;
+    @media (max-width: $break-medium) {
+      width: 61px;
+      height: 61px;
     }
   }
 
@@ -86,14 +90,15 @@
 
   // datepicker and categories ui
   &__category-dates {
-    display: none;
-    @media (min-width: $break-medium) {
+    display: block !important;
+
+    @media (max-width: $break-large) {
       float: right;
       clear: right;
     }
 
-    @media (min-width: $break-large) {
-      display: block !important;
+    @media (max-width: $break-medium) {
+      display: none;
     }
   }
 

@@ -7,16 +7,18 @@
 
 .story-display {
   &__wrap {
-    @media (min-width: $break-medium) {
-      display: flex;
+    display: flex;
+    @media (max-width: $break-medium) {
+      display: block;
     }
   }
 
   &__img {
+    flex: 0 0 40%;
     margin: 0 0 1rem;
 
-    @media (min-width: $break-medium) {
-      flex: 0 0 40%;
+    @media (max-width: $break-medium) {
+      flex: 0 0 auto;
     }
 
     img {
@@ -25,9 +27,11 @@
   }
 
   &__content {
-    @media (min-width: $break-medium) {
       flex: 0 0 60%;
       padding-left: 1.5rem;
+    @media (max-width: $break-medium) {
+      flex: 0 0 auto;
+      padding-left: 0;
     }
   }
 

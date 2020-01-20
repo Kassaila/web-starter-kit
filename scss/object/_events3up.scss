@@ -11,22 +11,22 @@
   }
 
   &__date {
-    width: 61px;
-    height: 61px;
+    width: 121px;
+    height: 121px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     border: 1px solid $color-black;
 
-    @media (min-width: $break-medium) {
+    @media (max-width: $break-large) {
       width: 82px;
       height: 82px;
     }
 
-    @media (min-width: $break-large) {
-      width: 121px;
-      height: 121px;
+    @media (max-width: $break-medium) {
+      width: 61px;
+      height: 61px;
     }
   }
 

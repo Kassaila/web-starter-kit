@@ -64,17 +64,17 @@
 
 /// Content Gutter
 @mixin gutter {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-  @media screen and (min-width: $break-medium) {
+  @media screen and (max-width: $break-large) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media screen and (min-width: $break-large) {
-    padding-left: 50px;
-    padding-right: 50px;
+  @media screen and (max-width: $break-medium) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

@@ -44,47 +44,47 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 4px 0 4px 6.9px;
       border-color: transparent transparent transparent $color-black;
-      margin-top: -2px;
-      margin-left: -1px;
+      border-width: 8px 0 8px 13.9px;
+      margin-top: -7px;
+      margin-left: -4px;
       z-index: 2;
 
-      @media screen and (min-width: $break-medium) {
+      @media screen and (max-width: $break-large) {
         border-width: 6px 0 6px 10.4px;
         margin-top: -4px;
         margin-left: -2px;
       }
 
-      @media screen and (min-width: $break-large) {
-        border-width: 8px 0 8px 13.9px;
-        margin-top: -7px;
-        margin-left: -4px;
+      @media screen and (max-width: $break-medium) {
+        border-width: 4px 0 4px 6.9px;
+        margin-top: -2px;
+        margin-left: -1px;
       }
     }
 
     &:after {
-      width: 48px;
-      height: 48px;
+      width: 95px;
+      height: 95px;
       border: 1px solid $color-white;
       border-radius: 100%;
       background: $color-white;
-      margin-top: -24px;
-      margin-left: -24px;
+      margin-top: -47.5px;
+      margin-left: -47.5px;
       transition: 0.2s all;
 
-      @media screen and (min-width: $break-medium) {
+      @media screen and (max-width: $break-large) {
         width: 72px;
         height: 72px;
         margin-top: -36px;
         margin-left: -36px;
       }
 
-      @media screen and (min-width: $break-large) {
-        width: 95px;
-        height: 95px;
-        margin-top: -47.5px;
-        margin-left: -47.5px;
+      @media screen and (max-width: $break-medium) {
+        width: 48px;
+        height: 48px;
+        margin-top: -24px;
+        margin-left: -24px;
       }
     }
 

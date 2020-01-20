@@ -10,10 +10,10 @@
   &__all {
     padding: 0 1em 0 0;
     margin: 1.5em 0;
-    text-align: left;
+    text-align: right;
 
-    @media (min-width: $break-medium) {
-      text-align: right;
+    @media (max-width: $break-medium) {
+      text-align: left;
     }
 
     button {
@@ -165,7 +165,7 @@
       margin: 0;
       width: 100%;
 
-      @media (max-width: $break-medium - 1px) {
+      @media (max-width: $break-medium) {
         margin: 0 1em;
         width: calc(100% + 2em);
       }

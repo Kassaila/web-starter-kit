@@ -7,11 +7,12 @@
 
 .program-list {
   &__item {
+    display: flex;
     padding: .5rem;
     border-bottom: 1px solid $color-black;
 
-    @media (min-width: $break-medium) {
-      display: flex;
+    @media (max-width: $break-medium) {
+      display: block;
     }
   }
 

@@ -8,10 +8,10 @@
 .instagram {
   &__tile {
     position: relative;
-    padding-top: 100%;
+    padding-top: calc((100% / 3) - (50px / 3));
 
-    @media (min-width: $break-large) {
-      padding-top: calc((100% / 3) - (50px / 3));
+    @media (max-width: $break-large) {
+      padding-top: 100%;
     }
   }
 

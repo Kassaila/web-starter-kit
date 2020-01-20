@@ -23,21 +23,21 @@
 
   &__date {
     text-align: center;
-    width: 61px;
-    height: 61px;
+    width: 129px;
+    height: 129px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @media (min-width: $break-medium) {
+    @media (max-width: $break-large) {
       width: 86px;
       height: 86px;
     }
 
-    @media (min-width: $break-large) {
-      width: 129px;
-      height: 129px;
+    @media (max-width: $break-medium) {
+      width: 61px;
+      height: 61px;
     }
   }
 
@@ -45,11 +45,12 @@
     @include clearfix();
 
     figure.align-right {
-      margin: 2rem -15px;
+      float: right;
+      margin: 0 0 2rem 2rem;
 
-      @media (min-width: $break-medium) {
-        float: right;
-        margin: 0 0 2rem 2rem;
+      @media (max-width: $break-medium) {
+        float: none;
+        margin: 2rem -15px;
       }
 
       img {

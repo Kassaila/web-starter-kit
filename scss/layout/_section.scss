@@ -6,10 +6,10 @@
  */
 
 .section {
-  margin: 2rem 0;
+  margin: 3rem 0;
 
-  @media (min-width: $break-large) {
-    margin: 3rem 0;
+  @media (max-width: $break-large) {
+    margin: 2rem 0;
   }
 
   &__header {
@@ -19,11 +19,11 @@
   }
 
   &__intro {
-    margin: 1rem 0;
+    margin: 2rem 0;
     font-size: 1.125rem;
 
-    @media (min-width: $break-large) {
-      margin: 2rem 0;
+    @media (max-width: $break-large) {
+      margin: 1rem 0;
     }
   }
 

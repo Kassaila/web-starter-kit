@@ -11,7 +11,7 @@
 html {
   font-size: 18px;
 
-  @media (min-width: $break-large) {
+  @media (max-width: $break-large) {
     font-size: 18px;
   }
 }
@@ -19,12 +19,12 @@ html {
 body {
   font-family: $base-font;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.78;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  @media (min-width: $break-large) {
-    line-height: 1.78;
+  @media (max-width: $break-large) {
+    line-height: 1.5;
   }
 
   //** Fixed class to prevent scrolling
@@ -112,14 +112,16 @@ figcaption {
 
   &--float {
     &.float-right {
-      @media (min-width: $break-medium) {
-        margin: 0 0 2rem 2rem;
+      margin: 0 0 2rem 2rem;
+      @media (max-width: $break-medium) {
+        margin: 0;
       }
     }
 
     &.float-left {
-      @media (min-width: $break-medium) {
-        margin: 0 2rem 2rem 0;
+      margin: 0 2rem 2rem 0;
+      @media (max-width: $break-medium) {
+        margin: 0;
       }
     }
   }
