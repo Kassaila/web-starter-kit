@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calendar - List</title>
+  <meta name="description" content="Calendar list page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/vendor.css"/>
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- OmniUpdate developer stylesheet -->
+  <link rel="stylesheet" href="../css/omniupdate.css">
+  <!-- Custom CMS stylesheet -->
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+
+
+<body>
+  <header role="banner">
+    <a href="#main" class="skip-link visually-hidden">Skip to content</a>
+  </header>
+
+  <main role="main" id="main" class="main">
+    <div class="container">
+      <div class="calendar">
+        <h1>
+          Calendar
+        </h1>
+        <button class="calendar__expand-filters">Expand Filters</button>
+        <div class="calendar__category-dates">
+          <div class="datepicker-holder">
+            <div class="category-dates__drop">
+              <div>
+                <form>
+                  <div class="mini-cal" role="navigation" aria-labelledby="mini-cal">
+                    <h2 class="visually-hidden" id="mini-cal">Mini Calendar</h2>
+                    <div class="mini-cal__header">
+                      <a href="#" title="Next Month" class="icon-arrow-left">
+                        <span class="visually-hidden">Next Month</span>
+                      </a>
+                      <div class="mini-cal__month">
+                        Feb 2019
+                      </div>
+                      <a href="#" title="Previous Month" class="icon-arrow-right">
+                        <span class="visually-hidden">Previous Month</span>
+                      </a>
+                    </div>
+                    <table class="mini-cal__dates">
+                      <tbody>
+                        <tr>
+                          <th scope="col">S<span class="visually-hidden">(Sunday)</span></th>
+                          <th scope="col">M<span class="visually-hidden">(Monday)</span></th>
+                          <th scope="col">T<span class="visually-hidden">(Tuesday)</span></th>
+                          <th scope="col">W<span class="visually-hidden">(Wednesday)</span></th>
+                          <th scope="col">T<span class="visually-hidden">(Thursday)</span></th>
+                          <th scope="col">F<span class="visually-hidden">(Friday)</span></th>
+                          <th scope="col">S<span class="visually-hidden">(Saturday)</span></th>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>01</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td class="events">03</td>
+                          <td>04</td>
+                          <td>05</td>
+                          <td>06</td>
+                          <td>07</td>
+                          <td>08</td>
+                        </tr>
+                        <tr>
+                          <td>09</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>14</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>20</td>
+                          <td>21</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td class="events current"><a href="#">27</a></td>
+                          <td class="events"><a href="#">28</a></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="category-calendar">
+            <div class="category__drop">
+              <h2>Categories</h2>
+              <form>
+                <fieldset>
+                  <legend class="visually-hidden">Filter By Categories</legend>
+                  <div class="control-wrap">
+                    <div>
+                      <label for="all-events">
+                        <input type="checkbox" name="categories" id="all-events" checked="checked">
+                        <span class="control-text">All Event Categories</span></label>
+                      <label for="cat1">
+                        <input type="checkbox" name="categories" id="cat1">
+                        <span class="control-text">Category Name Ipsum</span></label>
+                      <label for="cat2">
+                        <input type="checkbox" name="categories" id="cat2">
+                        <span class="control-text">Lorem Consectetur</span></label>
+                      <label for="cat3">
+                        <input type="checkbox" name="categories" id="cat3">
+                        <span class="control-text">Adiperro Commodo</span></label>
+                      <label for="cat4">
+                        <input type="checkbox" name="categories" id="cat4">
+                        <span class="control-text">Athletics</span></label>
+                      <label for="cat5">
+                        <input type="checkbox" name="categories" id="cat5">
+                        <span class="control-text">Marem Viverro Justo</span></label>
+                      <label for="cat6">
+                        <input type="checkbox" name="categories" id="cat6">
+                        <span class="control-text">Student Gravida Dolor</span></label>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="calendar__left-col">
+          <div class="calendar__pagination">
+            <ul class="calendar__pagination__list">
+              <li><a href="#">Day<span class="visually-hidden">Browse by Day</span></a></li>
+              <li><a href="#">Week<span class="visually-hidden">Browse by Week</span></a></li>
+              <li><a href="#">Month<span class="visually-hidden">Browse by Month</span></a></li>
+            </ul>
+            <div class="calendar__pagination__date">
+              <a href="#" class="icon-arrow-left" title="Browse Back"><span class="visually-hidden">Browse
+                  Back</span></a>
+              <strong>February 27, 2019</strong>
+              <a href="#" class="icon-arrow-right" title="Browse Forward"><span class="visually-hidden">Browse
+                  Forward</span></a>
+            </div>
+          </div>
+          <div class="calendar__events-list">
+            <div class="calendar__event">
+              <div class="calendar__event__date">
+                <div class="calendar__month">
+                  Feb
+                </div>
+                <div class="calendar__date">
+                  27
+                </div>
+              </div>
+              <div class="calendar__event__text">
+                <h2>
+                  <a href="#">
+                    Men's Basketball Finals
+                  </a>
+                </h2>
+                <div class="calendar__event__time">
+                  11:00am - 12:30pm
+                </div>
+                <div class="calendar__event__location">
+                  Sports Contest
+                </div>
+              </div>
+            </div>
+            <div class="calendar__event">
+              <div class="calendar__event__date">
+                <div class="calendar__month">
+                  Feb
+                </div>
+                <div class="calendar__date">
+                  27
+                </div>
+              </div>
+              <div class="calendar__event__text">
+                <h2>
+                  <a href="#">
+                    Ipsum Sit Amet Event Name
+                  </a>
+                </h2>
+                <div class="calendar__event__time">
+                  9:00am - 10:30pm
+                </div>
+                <div class="calendar__event__location">
+                  Campus Center
+                </div>
+              </div>
+            </div>
+            <div class="calendar__event">
+              <div class="calendar__event__date">
+                <div class="calendar__month">
+                  Feb
+                </div>
+                <div class="calendar__date">
+                  27
+                </div>
+              </div>
+              <div class="calendar__event__text">
+                <h2>
+                  <a href="#">
+                    Event Name Lorem
+                  </a>
+                </h2>
+                <div class="calendar__event__time">
+                  4:00pm - 6:00pm
+                </div>
+                <div class="calendar__event__location">
+                  Campus Green
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+  </footer>
+  <script src="../js/_compiled/vendor.js"></script>
+  <script src="../js/_compiled/main.js"></script>
+
+</body>
+
+</html>

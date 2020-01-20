@@ -106,7 +106,6 @@
    * Lint JS
    */
   requireTask(`${cfg.task.lintJs}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
     checkFix: true,
   });
 
@@ -114,10 +113,7 @@
    * Build JS
    */
   requireTask(`${cfg.task.buildJs}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
     mainJs: cfg.file.mainJs,
-    mainJsMin: cfg.file.mainJsMin,
     checkProduction: true,
   });
 
@@ -125,12 +121,7 @@
    * Build JS vendor (concatenate vendors array)
    */
   requireTask(`${cfg.task.buildJsVendors}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
-    temp: cfg.folder.temp,
     vendorJs: cfg.file.vendorJs,
-    vendorJsMin: cfg.file.vendorJsMin,
-    vendorJsTemp: cfg.file.vendorJsTemp,
     checkProduction: true,
   });
 
@@ -138,10 +129,7 @@
    * Build styles for application
    */
   requireTask(`${cfg.task.buildStyles}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
     mainScss: cfg.file.mainScss,
-    mainScssMin: cfg.file.mainScssMin,
     checkProduction: true,
   });
 
@@ -149,10 +137,7 @@
    * Build styles for vendor
    */
   requireTask(`${cfg.task.buildStylesVendors}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
     vendorScss: cfg.file.vendorScss,
-    vendorScssMin: cfg.file.vendorScssMin,
     checkProduction: true,
   });
 
@@ -160,8 +145,6 @@
    * Minify images
    */
   requireTask(`${cfg.task.imageMin}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
     imageExtensions: cfg.imageExtensions,
   });
 
@@ -169,7 +152,7 @@
    * Clean build folder
    */
   requireTask(`${cfg.task.cleanBuild}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.build,
+    htmlDest: cfg.buildHtml.dest,
   });
 
   /**
@@ -185,8 +168,8 @@
    * Watch for file changes
    */
   requireTask(`${cfg.task.watch}`, `./${cfg.folder.tasks}/`, {
-    src: cfg.folder.src,
-    dest: cfg.folder.build,
+    htmlTemplates: cfg.buildHtml.templates,
+    htmlDest: cfg.buildHtml.dest,
     imageExtensions: cfg.imageExtensions,
     browserSync,
     deleteFile,

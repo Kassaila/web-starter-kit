@@ -1,25 +1,17 @@
 module.exports = {
   folder: {
     tasks: 'tasks',
-    src: 'src',
-    build: 'assets',
-    temp: '.temp',
   },
   file: {
     mainHtml: 'index.html',
-    mainJs: 'app.js',
-    mainJsMin: 'app.min.js',
+    mainJs: 'main.js',
     vendorJs: 'vendor.js',
-    vendorJsMin: 'vendor.min.js',
-    vendorJsTemp: 'vendor.temp.js',
     mainScss: 'styles.scss',
-    mainScssMin: 'styles.min.css',
     vendorScss: 'vendor.scss',
-    vendorScssMin: 'vendor.min.css',
   },
   buildHtml: {
-    templates: 'src/html/templates',
-    dest: './assets',
+    templates: 'keyscreens',
+    dest: 'html',
   },
   task: {
     lintHtml: 'lint-html',
@@ -34,5 +26,5 @@ module.exports = {
     browserSync: 'browser-sync-server',
     watch: 'watch',
   },
-  imageExtensions: 'jpg|jpeg|png|svg|gif|ico|tiff',
+  imageExtensions: 'gif,png,jpg,jpeg,svg',
 };

@@ -7,7 +7,7 @@ const del = require('del');
 
 module.exports = function (options) {
   const dir = [
-    `./html`,
+    `./${options.htmlDest}`,
     `./css/main.css`,
     `./css/maps`,
     `./js/_compiled`,

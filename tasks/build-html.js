@@ -10,7 +10,7 @@ const notify = require('gulp-notify');
 module.exports = function(options) {
   const config = {
     prefix: '@@',
-    basepath: './keyscreens',
+    basepath: `./${options.templates}`,
     indent: true,
   };
   const errorConfig = {
@@ -20,9 +20,9 @@ module.exports = function(options) {
 
   return () => {
     return gulp
-      .src('./keyscreens/**/*.html')
+      .src(`./${options.templates}/**/*.html`)
       .pipe(fileInclude(config))
       .on('error', notify.onError(errorConfig))
-      .pipe(gulp.dest('./html'));
+      .pipe(gulp.dest(`./${options.dest}`));
   };
 };

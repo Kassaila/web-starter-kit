@@ -15,7 +15,7 @@ module.exports = function(options) {
 
   return done => {
     gulp
-      .src('./html/**/*.html')
+      .src(`./${options.dest}/**/*.html`)
       .pipe(
         htmlhint({
           'attr-lowercase': ['viewBox'],

@@ -12,12 +12,12 @@ module.exports = function (options) {
 
     gulp.watch(`./scss/**/*`, gulp.series(options.tasks.buildStyles));
 
-    gulp.watch(`./keyscreens/**/*`, gulp.series(options.tasks.buildHtml, options.tasks.lintHtml));
+    gulp.watch(`./${options.htmlTemplates}/**/*`, gulp.series(options.tasks.buildHtml, options.tasks.lintHtml));
 
-    gulp.watch('./assets/**/*.{gif,png,jpg,jpeg,svg}')
+    gulp.watch(`./assets/**/*.{${options.imageExtensions}}`)
       .on('add', gulp.series(options.tasks.imageMin));
 
-    gulp.watch([`./html/**/*`, `./css/**/*`, `./js/_compiled/**/*`, `!./css/maps/*.map`])
+    gulp.watch([`./${options.htmlDest}/**/*`, `./css/**/*`, `./js/_compiled/**/*`, `!./css/maps/*.map`])
       .on('change', options.browserSync.reload);
   };
 };

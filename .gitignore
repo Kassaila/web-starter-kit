@@ -19,7 +19,6 @@ npm-debug.log
 /.temp/
 .sass-cache
 node_modules
-html/
 
 # Ignore installed node packages
 node_modules/
