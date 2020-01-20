@@ -16,7 +16,8 @@
     "_": true,
     "matchMedia": true,
     "Backbone": true,
-    "Modernizr": true
+    "Modernizr": true,
+    "objectFitImages": true
   },
   "rules": {
     "prettier/prettier": "error",

@@ -6,7 +6,7 @@ pathConfig.array = [
   {
     // Accordion all collapsed
     label: 'Accordion',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.accordion',
     scrollToSelector: '.accordion',
     delay: 0,
@@ -19,7 +19,7 @@ pathConfig.array = [
   {
     // Accordion all expanded
     label: 'Accordion Expanded',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.accordion',
     scrollToSelector: '.accordion',
     delay: 500,
@@ -34,7 +34,7 @@ pathConfig.array = [
   {
     // Generic block: 2 column  w/ images
     label: 'Generic Block: 2 Column w/ image',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.gen2col',
     scrollToSelector: '.gen2col',
     delay: 0,
@@ -47,7 +47,7 @@ pathConfig.array = [
   {
     // Generic block: 3 column  w/ images
     label: 'Generic Block: 3 Column w/ image',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.gen3col',
     scrollToSelector: '.gen3col',
     delay: 0,
@@ -60,7 +60,7 @@ pathConfig.array = [
   {
     // Generic block: Image list
     label: 'Generic Block: Image list',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.genimglist',
     scrollToSelector: '.genimglist',
     delay: 100,
@@ -73,7 +73,7 @@ pathConfig.array = [
   {
     // Program List
     label: 'Program List',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.program-list',
     scrollToSelector: '.program-list',
     delay: 100,
@@ -86,7 +86,7 @@ pathConfig.array = [
   {
     // Statistic 3up Feature
     label: 'Statistic 3up Feature',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.stat3up',
     scrollToSelector: '.stat3up',
     delay: 100,
@@ -99,7 +99,7 @@ pathConfig.array = [
   {
     // Blog 3up Feature
     label: 'Blog 3up Feature',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.blog3up',
     scrollToSelector: '.blog3up',
     delay: 100,
@@ -112,7 +112,7 @@ pathConfig.array = [
   {
     // Story Display
     label: 'Story Display',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.story-display',
     scrollToSelector: '.story-display',
     delay: 0,
@@ -125,7 +125,7 @@ pathConfig.array = [
   {
     // Instagram Display
     label: 'Instagram Display',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.instagram__account',
     scrollToSelector: '.instagram__account',
     delay: 0,
@@ -138,7 +138,7 @@ pathConfig.array = [
   {
     // Twitter Display
     label: 'Twitter Display',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.twitter__account',
     scrollToSelector: '.twitter__account',
     delay: 0,
@@ -151,7 +151,7 @@ pathConfig.array = [
   {
     // WYSIWYG Display
     label: 'WYSIWYG Display',
-    url: `${config.env}/keyscreens/pattern-wysiwyg.php`,
+    url: `${config.env}/keyscreens/pattern-wysiwyg.html`,
     readySelector: '.wysiwyg',
     scrollToSelector: '.wysiwyg',
     delay: 0,
@@ -160,7 +160,7 @@ pathConfig.array = [
   {
     // Carousel Display
     label: 'Carousel Display',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.carousel',
     scrollToSelector: '.carousel',
     delay: 0,
@@ -173,7 +173,7 @@ pathConfig.array = [
   {
     // Pattern: Objects
     label: 'Pattern: Objects',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -185,7 +185,7 @@ pathConfig.array = [
   {
     // Pattern: WYSIWYG
     label: 'Pattern: WYSIWYG',
-    url: `${config.env}/keyscreens/pattern-wysiwyg.php`,
+    url: `${config.env}/keyscreens/pattern-wysiwyg.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -197,7 +197,7 @@ pathConfig.array = [
   {
     // Alert: Display
     label: 'Alert: Display',
-    url: `${config.env}/keyscreens/alert-display.php`,
+    url: `${config.env}/keyscreens/alert-display.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -209,7 +209,7 @@ pathConfig.array = [
   {
     // News: Detail
     label: 'News: Detail',
-    url: `${config.env}/keyscreens/news-detail.php`,
+    url: `${config.env}/keyscreens/news-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -221,7 +221,7 @@ pathConfig.array = [
   {
     // News: Listing
     label: 'News: Listing',
-    url: `${config.env}/keyscreens/news-listing.php`,
+    url: `${config.env}/keyscreens/news-listing.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -233,7 +233,7 @@ pathConfig.array = [
   {
     // Faculty: Detail
     label: 'Faculty: Detail',
-    url: `${config.env}/keyscreens/faculty-detail.php`,
+    url: `${config.env}/keyscreens/faculty-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -245,7 +245,7 @@ pathConfig.array = [
   {
     // Faculty: List
     label: 'Faculty: List',
-    url: `${config.env}/keyscreens/faculty-list.php`,
+    url: `${config.env}/keyscreens/faculty-list.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -257,7 +257,7 @@ pathConfig.array = [
   {
     // Program: Detail
     label: 'Program: Detail',
-    url: `${config.env}/keyscreens/program-detail.php`,
+    url: `${config.env}/keyscreens/program-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -269,7 +269,7 @@ pathConfig.array = [
   {
     // Blog: Detail
     label: 'Blog: Detail',
-    url: `${config.env}/keyscreens/blog-detail.php`,
+    url: `${config.env}/keyscreens/blog-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -281,7 +281,7 @@ pathConfig.array = [
   {
     // Calendar: Detail
     label: 'Calendar: Detail',
-    url: `${config.env}/keyscreens/calendar-detail.php`,
+    url: `${config.env}/keyscreens/calendar-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -293,7 +293,7 @@ pathConfig.array = [
   {
     // Calendar: List
     label: 'Calendar: List',
-    url: `${config.env}/keyscreens/calendar-list.php`,
+    url: `${config.env}/keyscreens/calendar-list.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -305,7 +305,7 @@ pathConfig.array = [
   {
     // Catalog: Course List
     label: 'Catalog: Course List',
-    url: `${config.env}/keyscreens/calendar-detail.php`,
+    url: `${config.env}/keyscreens/calendar-detail.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -317,7 +317,7 @@ pathConfig.array = [
   {
     // Catalog Program: List
     label: 'Catalog Program: List',
-    url: `${config.env}/keyscreens/catalog-program-list.php`,
+    url: `${config.env}/keyscreens/catalog-program-list.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -329,7 +329,7 @@ pathConfig.array = [
   {
     // Blog: List
     label: 'Blog: List',
-    url: `${config.env}/keyscreens/blog-list.php`,
+    url: `${config.env}/keyscreens/blog-list.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -341,7 +341,7 @@ pathConfig.array = [
   {
     // Program: List
     label: 'Program: List',
-    url: `${config.env}/keyscreens/program-finder.php`,
+    url: `${config.env}/keyscreens/program-finder.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -353,7 +353,7 @@ pathConfig.array = [
   {
     // Event: List
     label: 'Event: List',
-    url: `${config.env}/keyscreens/event-list.php`,
+    url: `${config.env}/keyscreens/event-list.html`,
     readySelector: '',
     delay: 0,
     selectors: '',
@@ -365,7 +365,7 @@ pathConfig.array = [
   {
     // Events 3 up
     label: 'Events 3up Feature',
-    url: `${config.env}/keyscreens/pattern-objects.php`,
+    url: `${config.env}/keyscreens/pattern-objects.html`,
     readySelector: '.events3up',
     scrollToSelector: '.events3up',
     delay: 100,
