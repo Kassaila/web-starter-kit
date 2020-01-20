@@ -511,13 +511,13 @@ h3 {
   font-weight: 700;
   line-height: 1.21;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   h3 {
     margin: 40px 0 15px;
     font-size: 1.375rem;
   }
 }
-@media (min-width: 699px) {
+@media (max-width: 699px) {
   h3 {
     margin: 35px 0 5px;
     font-size: 1.25rem;
@@ -1655,6 +1655,7 @@ table {
 }
 .carousel__caption {
   position: absolute;
+  bottom: 0;
   width: calc(100% - 4rem);
   margin: 2rem;
   padding: 2rem;
@@ -1665,7 +1666,6 @@ table {
   .carousel__caption {
     position: relative;
     width: 100%;
-    bottom: 0;
     font-size: 1.125rem;
     margin: 2rem auto 0;
     padding: 1rem;
