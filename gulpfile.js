@@ -213,7 +213,7 @@
       ),
       gulp.series(
         cfg.task.buildStyles,
-        // cfg.task.buildStylesVendors,
+        cfg.task.buildStylesVendors,
       ),
       gulp.series(
         cfg.task.buildJs,

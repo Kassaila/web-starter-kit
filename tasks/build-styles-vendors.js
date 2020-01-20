@@ -21,10 +21,10 @@ module.exports = function (options) {
   };
 
   return () => {
-    return gulp.src(`./${options.src}/vendor_entries/${options.vendorScss}`)
+    return gulp.src(`./scss/vendor/vendor.scss`)
       .pipe(sass.sync())
       .on('error', notify.onError(errorConfig))
       .pipe(postcss(plugins))
-      .pipe(gulp.dest(`./${options.dest}/css`));
+      .pipe(gulp.dest(`./css`));
   };
 };
