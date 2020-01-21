@@ -1309,18 +1309,24 @@ table {
 .hero {
   display: block;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   background: url("https://picsum.photos/1280/520?random=70") no-repeat center center;
   background-size: cover;
 }
 .hero__title {
-  margin: 0;
+  margin: 0 -50px;
   padding: 0 0 0 20px;
   line-height: 300px;
 }
+@media (max-width: 1024px) {
+  .hero__title {
+    margin: 0 -20px;
+  }
+}
 @media (max-width: 699px) {
   .hero__title {
+    margin: 0 -15px;
     padding: 0 0 0 15px;
   }
 }
@@ -2181,6 +2187,7 @@ table {
 }
 @media (max-width: 1024px) {
   .calendar__expand-filters {
+    display: block;
     float: right;
     clear: right;
     margin-top: 2rem;
@@ -2242,17 +2249,19 @@ table {
   margin-bottom: 0;
 }
 .calendar__category-dates {
-  display: block !important;
+  display: block;
+  float: right;
+  clear: right;
 }
 @media (max-width: 1024px) {
   .calendar__category-dates {
-    float: right;
-    clear: right;
+    display: none;
   }
 }
 @media (max-width: 699px) {
   .calendar__category-dates {
-    display: none;
+    float: none;
+    clear: none;
   }
 }
 .calendar__event {

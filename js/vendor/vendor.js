@@ -6,4 +6,5 @@ module.exports = [
   './node_modules/object-fit-images/dist/ofi.js',
   './node_modules/slick-carousel/slick/slick.js',
   './js/vendor/tweetie.min.js',
+  './node_modules/datatables.net/js/jquery.dataTables.js'
 ];
