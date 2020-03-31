@@ -106,6 +106,11 @@ gulp.task(global.task.browserSync, require('./tasks/browser-sync-server')({ brow
 gulp.task(global.task.watch, require('./tasks/watch')({ browserSyncInstance }));
 
 /**
+ * Build PWA
+ */
+gulp.task(global.task.buildPwa, require('./tasks/build-pwa')());
+
+/**
  * Develop mode - with browser sync, file watch & live reload
  */
 gulp.task('default', gulp.series(
@@ -128,6 +133,7 @@ gulp.task('default', gulp.series(
   ),
   global.task.buildImages,
   global.task.copyFiles,
+  global.task.buildPwa,
   gulp.parallel(
     global.task.browserSync,
     global.task.watch,
@@ -157,5 +163,6 @@ gulp.task(global.task.build, gulp.series(
   ),
   global.task.buildImages,
   global.task.copyFiles,
+  global.task.buildPwa,
   global.task.copyFilesProd,
 ));

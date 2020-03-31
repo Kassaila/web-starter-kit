@@ -5,6 +5,13 @@
 
 import dots from './modules/dots';
 
+// Check service worker in browser
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+
 (($) => {
   // When DOM is ready
   $(() => {

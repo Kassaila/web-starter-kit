@@ -15,6 +15,7 @@ module.exports = {
     copyFilesProd: 'copy-files-production',
     browserSync: 'browser-sync',
     watch: 'watch',
+    buildPwa: 'build-pwa',
     build: 'build',
   },
   folder: {
