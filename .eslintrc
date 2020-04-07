@@ -2,7 +2,9 @@
   "root": true,
   "globals": {
     "jQuery": true,
-    "$": true
+    "$": true,
+    "importScripts": true,
+    "workbox": true
   },
   "env": {
     "browser": true,
