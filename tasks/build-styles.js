@@ -7,7 +7,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const gcmq = require('postcss-sort-media-queries');
+const sortMedia = require('postcss-sort-media-queries');
 const cssnano = require('cssnano');
 const rename = require('gulp-rename');
 
@@ -18,19 +18,19 @@ sass.compiler = require('sass');
 
 module.exports = function () {
   const production = global.isProduction();
-  const mainFileName = production ? global.file.mainStylesMin : global.file.mainStyles;
+  const filesCustom = global.buildStyles.getFilesCustom().filesCustom.map((file) => `!${file}`);
   const plugins = [
     autoprefixer(),
   ];
 
   if (production) {
-    plugins.push(gcmq({ sort: global.buildStyles.sortType, }));
+    plugins.push(sortMedia({ sort: global.buildStyles.sortType, }));
     plugins.push(cssnano());
   }
 
   return (done) => {
-    return gulp.src(`./${global.folder.src}/scss/${global.file.mainStylesSrc}`, { sourcemaps: !production })
-      .pipe(rename(mainFileName))
+    return gulp.src([`./${global.folder.src}/scss/*.scss`, ...filesCustom], { sourcemaps: !production })
+      .pipe(rename((file) => ({ dirname: file.dirname, basename: !production ? file.basename : `${file.basename}.min`, extname: '.css' })))
       .pipe(sass.sync({ sourceMap: !production, }))
       .on('error', (error) => notifier.error(error.message, 'Main Sass compiling error', done))
       .pipe(postcss(plugins))
