@@ -1,4 +1,4 @@
-module.exports = {
+const global = {
   task: {
     lintHtml: 'lint-html',
     lintJs: 'lint-js',
@@ -23,17 +23,17 @@ module.exports = {
     build: 'production',
   },
   file: {
-    mainHtml: 'index.html',
-    mainJs: 'app.js',
-    mainJsMin: 'app.min.js',
-    vendorJs: 'vendor.js',
-    vendorJsMin: 'vendor.min.js',
-    mainStylesSrc: 'styles.scss',
-    mainStyles: 'styles.css',
-    mainStylesMin: 'styles.min.css',
-    vendorStylesSrc: 'vendor.scss',
-    vendorStyles: 'vendor.css',
-    vendorStylesMin: 'vendor.min.css',
+    html: {
+      main: 'index.html',
+    },
+    js: {
+      main: 'app',
+      vendor: 'vendor',
+    },
+    styles: {
+      main: 'styles',
+      vendor: 'vendor',
+    },
   },
   buildHtml: {
     templates: 'src/html/templates',
@@ -41,9 +41,20 @@ module.exports = {
   buildStyles: {
     // Sorting type css media queries: 'desktop-first' || 'mobile-first'
     sortType: 'desktop-first',
+    getFilesCustom() {
+      return {
+        filesCustom: [],
+        isSortMedia: false,
+      };
+    }
   },
   buildJs: {
-    externalLibs: {},
+    getEntryPoints() {
+      return {
+        [global.file.js.main]: `./${global.folder.src}/js/${global.file.js.main}`,
+      };
+    },
+    getExternalLibs: {},
   },
   buildImages: {
     imageExtensions: 'jpg,jpeg,png,svg,gif,ico',
@@ -55,33 +66,28 @@ module.exports = {
     icon: './system_files/icons/error_icon.png',
     wait: true,
   },
-  getFilesForStylesCustom() {
-    return {
-      files: [],
-      // gcmq - group css media queries
-      isGcmq: false,
-    };
-  },
   getFilesToCopy() {
     return [
-      `./${this.folder.src}/**`,
-      `!{${this.folder.src}/images,${this.folder.src}/images/**}`,
-      `!{${this.folder.src}/js,${this.folder.src}/js/**}`,
-      `!{${this.folder.src}/html,${this.folder.src}/html/**}`,
-      `!{${this.folder.src}/scss,${this.folder.src}/scss/**}`,
-      `!{${this.folder.src}/vendor_entries,${this.folder.src}/vendor_entries/**}`,
+      `./${global.folder.src}/**`,
+      `!{${global.folder.src}/images,${global.folder.src}/images/**}`,
+      `!{${global.folder.src}/js,${global.folder.src}/js/**}`,
+      `!{${global.folder.src}/html,${global.folder.src}/html/**}`,
+      `!{${global.folder.src}/scss,${global.folder.src}/scss/**}`,
+      `!{${global.folder.src}/vendor_entries,${global.folder.src}/vendor_entries/**}`,
     ];
   },
   getFilesToCopyProd() {
     return [
-      `./${this.folder.dev}/**`,
+      `./${global.folder.dev}/**`,
       '.htaccess',
     ];
   },
   isProduction() {
-    return process.argv[process.argv.length - 1] === this.task.build;
+    return process.argv[process.argv.length - 1] === global.task.build;
   },
   isFixJs() {
-    return process.argv[process.argv.length - 1] === this.task.fixJs;
+    return process.argv[process.argv.length - 1] === global.task.fixJs;
   }
 };
+
+module.exports = global;

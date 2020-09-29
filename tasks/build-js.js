@@ -12,19 +12,16 @@ const global = require('../gulp-config.js');
 
 module.exports = function () {
   const production = global.isProduction();
-  const mainFileName = production ? global.file.mainJsMin : global.file.mainJs;
-  const vendorFileName = production
-    ? global.file.vendorJsMin
-    : global.file.vendorJs;
+  const entryPoints = global.buildJs.getEntryPoints();
 
   return (done) => {
     try {
       const config = {
         mode: 'none',
-        entry: `./${global.folder.src}/js/${global.file.mainJs}`,
+        entry: entryPoints,
         output: {
           path: path.resolve(global.folder.dev, `js/`),
-          filename: mainFileName,
+          filename: !production ? '[name].js' : '[name].min.js',
         },
         optimization: {
           splitChunks: {
@@ -34,7 +31,7 @@ module.exports = function () {
             cacheGroups: {
               vendor: {
                 test: /[\\/](node_modules|vendor_entries)[\\/]/,
-                filename: vendorFileName,
+                filename: !production ? `${global.file.js.vendor}.js` : `${global.file.js.vendor}.min.js`,
               },
             },
           },
