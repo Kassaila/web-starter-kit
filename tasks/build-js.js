@@ -17,7 +17,7 @@ module.exports = function () {
   return (done) => {
     try {
       const config = {
-        mode: 'none',
+        mode: !production ? 'development' : 'production',
         entry: entryPoints,
         output: {
           path: path.resolve(global.folder.dev, `js/`),
@@ -37,6 +37,7 @@ module.exports = function () {
           },
           minimize: production,
           minimizer: [new TerserPlugin()],
+          usedExports: true,
         },
         module: {
           rules: [
@@ -56,7 +57,7 @@ module.exports = function () {
         if (error) {
           throw new Error(error);
         }
-        
+
         if (production) {
           console.log(
             stats.toString({

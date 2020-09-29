@@ -67,5 +67,6 @@
   "dependencies": {
     "jquery": "3.5.1",
     "normalize.css": "8.0.1"
-  }
+  },
+  "sideEffects": false
 }
